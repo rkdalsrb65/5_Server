@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+
+    <link rel="stylesheet" href="resource/css/index.css">
+    <!-- C:\workspace\5_Server\test\src\main\webapp\resource\css\index.css 절대 경로 -->
+
+    <script src="https://kit.fontawesome.com/f7459b8054.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- [시맨틱 태그 종류]
+    <main> : 현재 문서의 주된 콘텐츠를 작성하는 영역
+    
+    <header> : 문서의 제목, 머리말 영역
+    <footer> : 문서의 하단 부분, 꼬리말, 정보 작성 영역
+    <nav> : 나침반 역할(다른 페이지, 사이트 이동)의 링크 작성 영역
+    <aside> : 사이드바, 광고 등을 표시하는 양쪽 영역
+    <section> : 구역을 구분하기 위한 영역
+    <article> : 본문과 독립된 콘텐츠를 작성하는 영역 -->
+
+    <main>
+        <header>
+            <section>
+                <a href="#">
+                    <img src="/test\src\main\webapp\images\logo.jpg" id="home-logo">
+                </a>
+            </section>
+
+            <section>
+                <article class="search-area">
+                    <form action="#">
+                        <fieldset>
+                            
+                            <input type="text" id="query" name="query" placeholder="검색어를 입력해주세요.">
+                            <button type="submit" id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+                        </form>
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+
+            <section></section>
+
+        </header>
+
+        <nav>
+            <ul>
+            <li><a href="*">공지사항</a></li>
+            <li><a href="*">자유 게시판</a></li>
+            <li><a href="*">질문 게시판</a></li>
+            <li><a href="*">FAQ</a></li>
+            <li><a href="*">1:1 문의</a></li>
+        </ul>
+        </nav>
+
+        <section class="content">
+        <section class="content-1"></section>
+        <section class="content-2">
+
+            <form action="/test/test" name="login-frm" method="POST">
+                <fieldset id="id-pw-area">
+                    <section>
+                        <input type="text" name="inputId" placeholder="아이디">
+                        <input type="password" name="inputPw" placeholder="비밀번호">
+                    </section>
+
+                    <section>
+                        <button type="submit">로그인</button>
+                    </section>
+                </fieldset>
+                
+                <label>
+                    <input type="checkbox" name="saveId">아이디 저장
+                </label>
+
+                <article id="signUp-find-area">
+                    <a href="*">회원 가입</a> | <a href="*">ID/PW찾기</a>
+                </article>
+
+            </form>
+        </section>
+    </section>
+</main>
+<footer>
+    <p>Copyright &copy; KH Information Educational Institute A-Class</p>
+    <article>
+        <a href="*">프로젝트 소개</a> | <a href="*">이용약관</a> | <a href="*">개인정보처리방침</a> | <a href="*">고객센터</a>
+    </article>
+</footer>
+
+<div class="last">
+    <a href="*">이용약관</a> | <a href="*">개인정보취급방침</a> | <a href="*">인재채용문의</a> | <a href="*">훈련비 게시</a> | <a href="*">강사채용</a>
+</div>
+
+<div class="fixed-area">
+    <a href="#body-top">맨 위로 이동</a>
+</div>
+
+</body>
+</html>
