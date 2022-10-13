@@ -39,7 +39,7 @@
 
         2) import 구문도 생략!
 
-        3) 객채에 저장된 값을 얻어올 때 getter를 호출하는데
+        3) 객체에 저장된 값을 얻어올 때 getter를 호출하는데
             get필드명()이 아닌 필드명만 작성하면 된다!
 
         + 데이터 파싱(String -> int)도 자동으로 된다!
@@ -50,7 +50,6 @@
     person의 name : ${person.name} <br>
     person의 age : ${person.age} <br>
     person의 address : ${person.address} <br>
-
     person.toString() : ${person} <br>
 
     <h3 style='color: #ccccff'>스크립틀릿, 표현식을 이용해서 값 출력하기</h3>
