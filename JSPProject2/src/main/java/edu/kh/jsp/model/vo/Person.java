@@ -39,6 +39,14 @@ public class Person {
 	public String toString() {
 		return name + " / " + age + " / " + address;
 	}
+
+	// 매개변수 생성자
+	public Person(String name, int age, String address) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.address = address;
+	}
 	
 	
 	
