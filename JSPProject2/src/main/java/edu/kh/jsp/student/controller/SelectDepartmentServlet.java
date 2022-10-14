@@ -19,8 +19,6 @@ public class SelectDepartmentServlet extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-		
-		
 		// 서비스 객체 생성
 		StudentService service = new StudentService(); // heap 영역으로 할당
 		
