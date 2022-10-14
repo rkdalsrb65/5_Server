@@ -54,8 +54,6 @@ public class StudentService {
 		close(conn);
 		
 		// 결과 반환		
-		
-		
 		return stdList;
 	}
 	
