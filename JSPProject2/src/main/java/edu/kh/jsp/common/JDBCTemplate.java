@@ -44,7 +44,7 @@ public class JDBCTemplate {
            String filePath = JDBCTemplate.class.getResource("/edu/kh/jsp/sql/driver.xml").getPath();
            
            // driver.xml 파일 읽어오기
-           prop.loadFromXML( new FileInputStream("driver.xml") );
+           prop.loadFromXML( new FileInputStream(filePath) );
            // -> XML 파일에 작성된 내용이 Properties 객체에 모두 저장됨.
            
            
