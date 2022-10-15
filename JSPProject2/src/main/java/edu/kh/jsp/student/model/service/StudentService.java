@@ -55,8 +55,7 @@ public class StudentService {
 		
 		// 결과 반환		
 		return stdList;
-	}
-	
+	}	
 	
 	
 }
