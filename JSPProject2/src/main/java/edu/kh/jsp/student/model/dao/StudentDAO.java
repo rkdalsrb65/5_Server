@@ -36,7 +36,6 @@ public class StudentDAO {
 		}
 	}
 
-
 	/** 학생 전체 조회 DAO
 	 * @param conn
 	 * @return stdList
@@ -74,8 +73,7 @@ public class StudentDAO {
 		// 결과 반환
 		return stdList;
 	}
-
-
+	
 	/**
 	 * @param conn
 	 * @param departmentName 
