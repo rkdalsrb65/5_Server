@@ -36,7 +36,6 @@ public class StudentDAO {
 		}
 	}
 
-
 	/** 학생 전체 조회 DAO
 	 * @param conn
 	 * @return stdList
@@ -75,7 +74,6 @@ public class StudentDAO {
 		return stdList;
 	}
 
-
 	/**
 	 * @param conn
 	 * @param departmentName 
@@ -96,7 +94,6 @@ public class StudentDAO {
 			
 			// ?에 알맞은 값 대입
 			pstmt.setString(1, departmentName);
-			
 			
 			// SQL 수행 후 결과 반환 받기
 			rs = pstmt.executeQuery();
