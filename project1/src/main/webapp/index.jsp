@@ -1,12 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
-    index.jsp 입니다.
-</body>
-</html>
+
+<%-- JSP 액션 태그 중 forward 
+     - Servlet -> JSP(==Servlet) 요청 위임
+       JSP 위임 시 JSP 파일 경로
+
+     - JSP(==Servlet) -> Servlet 요청 위임
+       Servlet 위임 시 요청 주소 작성
+--%>
+
+<jsp:forward page="main" />
+<%-- 메인 페이지(index.jsp) 요청이 왔을 때
+     요청 주소가 /main인 servlet으로 요청 위임
+     -> Servlet == Back-End -> DB 연결 가능
+     -> 다시 JSP 위임 가능
+--%>
