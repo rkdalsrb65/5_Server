@@ -148,5 +148,5 @@ grid-row              | 줄 시작 번호와 줄 끝 번호 사이에 슬래시(
 grid-area             | 템플릿 이름을 지정합니다.                                     | X
 grid-template-areas   | grid-area를 사용해 템플릿 그리드 만듭니다.                    | X
 
-minmax( )             |최솟값과 최댓값을 지정하는 함수입니다.                         | 크깃값, auto
-repeat( )             |같은 값을 여러 번 반복할 때 사용하는 함수입니다.               | 크깃값, auto-fill, auto-fit
+minmax( )             | 최솟값과 최댓값을 지정하는 함수입니다.                         | 크깃값, auto
+repeat( )             | 같은 값을 여러 번 반복할 때 사용하는 함수입니다.               | 크깃값, auto-fill, auto-fit
