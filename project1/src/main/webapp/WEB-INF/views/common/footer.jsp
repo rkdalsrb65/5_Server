@@ -18,3 +18,13 @@
         </article>
 
     </footer>
+
+<%-- session scope에 message 속성이 존재하는 경우
+    alert창을 이용해서 내용을 출력 --%>
+
+<c:if test="${not empty sessionScope.message}">
+    <script>
+        alert("${sessionScope.message}");
+    </script>
+
+</c:if>
