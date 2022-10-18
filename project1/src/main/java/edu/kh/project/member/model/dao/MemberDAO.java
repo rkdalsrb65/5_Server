@@ -45,7 +45,7 @@ public MemberDAO() {
  */
 public Member login(Connection conn, Member member) throws Exception {
 	
-	Member loginMember = new Member();
+	Member loginMember = null; // 결과 저장용 변수 선언
 	
 	try {
 		
@@ -53,16 +53,22 @@ public Member login(Connection conn, Member member) throws Exception {
 		
 		pstmt = conn.prepareStatement(sql); // PreparedStatement 객체 생성
 		
-		pstmt.setString(1, memberEmail); // ? 알맞은 값 대입
-		pstmt.setString(2, memberPw); // ? 알맞은 값 대입
+		pstmt.setString(1, member.getMemberEmail()); // ? 알맞은 값 대입
+		pstmt.setString(2, member.getMemberPw()); // ? 알맞은 값 대입
 		
 		rs = pstmt.executeQuery(); // SQL 수행 후 결과 반환 받기
 		
 		if(rs.next()) {
-			String memberEmail = rs.getString("MEMBER_EMAIL");
-			String memberPw = rs.getString("MEMBER_PW");
+			loginMember = new Member();
 			
-			loginMember.add(new Member(memberEmail, memberPw));
+			loginMember.setMemberNo(rs.getInt("MEMBER_NO"));
+			loginMember.setMemberEmail(rs.getString("MEMBER_EMAIL"));
+			loginMember.setMemberNickname(rs.getString("MEMBER_NICKNAME"));
+			loginMember.setMemberTel(rs.getString("MEMBER_TEL"));
+			loginMember.setMemberAddress(rs.getString("MEMBER_ADDRESS"));
+			loginMember.setProfileImage(rs.getString("PROFILE_IMG"));
+			loginMember.setAuthority(rs.getInt("AUTHORITY"));
+			loginMember.setEnrollDate(rs.getString("ENROLL_DATE"));
 		}
 		
 	} finally {
