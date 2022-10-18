@@ -402,6 +402,7 @@ section.content{
             transform: scale(0.8); /* 80% 로 줄어듬 */
         }
 
+        /* 내 정보 -> 이메일 */
         .my-info > p{
             margin: 0;
             color: gray;
