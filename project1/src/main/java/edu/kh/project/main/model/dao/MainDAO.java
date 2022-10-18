@@ -20,7 +20,7 @@ public class MainDAO {
 	private ResultSet rs;
 	private Properties prop;
 	
-	public MainDAO() { 
+	public MainDAO() {
 		
 		try {
 			
