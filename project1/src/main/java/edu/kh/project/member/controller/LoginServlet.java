@@ -46,7 +46,27 @@ public class LoginServlet extends HttpServlet{
 			
 			// *** redirect(재요청) ***
 			// - servlet이 다른 주소를 요청함.
+			// - 요청에 대한 응답화면을 직접 만드는 거이 아닌
+			// 다른 응답화면을 구현하는 Servlet을 요청하여
+			// 대신 화면을 만들게 하는 것.
 			
+			// 메인 페이지로 redirect
+			// -> 메인 페이지를 요청한 것이기 때문에
+			// 		 주소창에 주소가 메인 페이지 주소(/)로 변함.
+			resp.sendRedirect("/");
+			
+			/* forward / redirect 차이점
+			 * 
+			 * forward
+			 * - 주소창 변화 X
+			 * - JSP 경로 작성
+			 * - req, resp가 유지된다
+			 * 
+			 * redirect
+			 * - 주소창 변화 O
+			 * - 요청 주소 작성
+			 * - req, resp가 유지되지 않는다.
+			 */
 			
 		} catch(Exception e) {
 			e.printStackTrace();
