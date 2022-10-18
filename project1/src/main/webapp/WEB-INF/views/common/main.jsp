@@ -48,6 +48,7 @@
 
         <section class="content">
             <section class="content-1"></section>
+                ${loginMember}
             <section class="content-2">
 
                             <%-- 절대 경로 --%>
