@@ -63,7 +63,9 @@
                     <!-- 아이디, 비밀번호, 로그인 버튼 -->
                     <fieldset id="id-pw-area">
                         <section>
-                            <input type="text" name="inputEmail" placeholder="이메일" autocomplete="off">
+                            <input type="text" name="inputEmail"
+                            placeholder="이메일" autocomplete="off" value="${cookie.saveId.value}">
+                                                                    <%-- 쿠키 중 saveId에 저장된 값 --%>
                             <!-- autocomplete="off" == 자동완성 사용 X -->
                             <input type="password" name="inputPw" placeholder="비밀번호">
                         </section>
@@ -74,9 +76,18 @@
                         </section>
                     </fieldset>
         
+                    <%-- 쿠키에 saveId가 있을 경우 --%>
+                    <c:if test="${!empty cookie.saveId.value}">
+                        <%-- temp 변수 선언 --%>
+                        <c:set var="temp" value="checked" />
+                        <%-- page scope == page 어디서든 사용 가능
+                                        == if문 나가도 쓸 수 있다 --%>
+                    
+                    </c:if>
+
                     <!-- label 태그 내부에 input태그를 작성하면 자동 연결됨 -->
                     <label>
-                        <input type="checkbox" name="saveId"> 아이디 저장
+                        <input type="checkbox" name="saveId" ${temp}> 아이디 저장
                     </label>
         
                     <!-- 회원가입/ ID/PW 찾기 -->
@@ -105,7 +116,7 @@
                                 <div>
                                     <a href="#" id="nickname">${loginMember.memberNickname}</a>
 
-                                    <a href="#" id="logout-btn">로그아웃</a>
+                                    <a href="/member/logout" id="logout-btn">로그아웃</a>
                                 </div>
 
                                 <p>${loginMember.memberEmail}</p>
