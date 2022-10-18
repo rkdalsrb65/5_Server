@@ -1,0 +1,44 @@
+header{ position : relative; /* 상대적 기준 제공 */}
+
+#header-top-menu{
+    position: absolute; /* 자리 고정 */
+    right: 420px; /* 오른쪽 배치 */
+    top: 5px; /* 위에서 5px 떨어지게 */
+}
+
+#header-top-menu a{
+    text-decoration: none; /* 밑줄 없애기 */
+    color : black; /* 글자 검정색 */
+}
+
+#header-top-menu *{
+    font-size: 12px;    /* 글자 크기 15px 지정 */
+}
+#header-top{
+    position: absolute; /* 자리 고정 */
+    left: 400px; /* 오른쪽 배치 */
+    top: 5px; /* 위에서 5px 떨어지게 */
+}
+
+#qq{
+    position: absolute;
+    top:40px;
+    right: 415px;
+}
+
+#ww{
+    position: absolute;
+    top:330px;
+    width: 1052px;
+    left: 407px;
+}
+
+#ww{
+    border: solid 1px #ddd;
+}
+
+#ww > a {
+    text-decoration: none; /* 밑줄 없애기 */
+    color : black; /* 글자 검정색 */
+    font-size: 13px;
+}
