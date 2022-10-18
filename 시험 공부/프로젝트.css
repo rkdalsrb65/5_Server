@@ -16,7 +16,7 @@ header{ position : relative; /* 상대적 기준 제공 */}
 }
 #header-top{
     position: absolute; /* 자리 고정 */
-    left: 400px; /* 오른쪽 배치 */
+    left: 405px; /* 오른쪽 배치 */
     top: 5px; /* 위에서 5px 떨어지게 */
 }
 
