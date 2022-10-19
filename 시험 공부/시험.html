@@ -394,6 +394,15 @@ type="number"
 type="range"
 
 date 관련 input 태그
+type="date"
+
+type="month"
+
+type="week"
+
+type="time"
+
+type="datetime-local"
 
 다중 선택 관련 input 태그
 1) type="checkbox"
@@ -410,6 +419,10 @@ date 관련 input 태그
 같은 name 속성 값을 작성하면 된다.
 
 type="checkbox"
+중복 선택 가능
+
+type="radio"
+1개만 선택 가능
 
 label 태그
 - input 태그 제목으로 사용되는 태그
@@ -417,6 +430,9 @@ label 태그
 1) input 태그에 id 속성 값을 작성
 2) 원하는 위치에 label 태그를 작성한 후 for 속성을 작성.
 이 때 for 속성의 값은 1)에서 작성한 id 속성 값과 같아야 한다.
+ex)
+<label for="속성">내용 : </label>
+<input type="text" id="속성">
 
 form 태그
 - 내부에 작성된 input 태그의 값을 서버로 전달
@@ -443,7 +459,25 @@ button 태그 : 버튼 모양을 출력하는 태그
 textarea : 여러 줄을 입력하기 위한 입력 상자
 
 select, option : 선택 상자(select)를 열어서 특정 값(option)을 선택
+ex)
+<form action="#">
+<select name="food"> <!-- key 담당-->
+<!-- value 담당 -->
+<option value="a">사과</option>
+<option value="b">김밥</option>
+<option value="c">라면</option>
+</select>
+
+option태그 value 미작성 시 : option태그의 내용(시작, 종료 태그 사이 값)
+option태그 value 작성 시   : value에 작성된 값 제출
 
 fieldset / legend
 fieldset : 테두리를 만들어 그룹을 구분하는 영역
 legend : fieldset에 붙여주는 제목
+ex)
+<fieldset>
+<legend>로그인</legend>
+ID : <input type="text">
+PW : <input type="password">
+<button>login</button>
+</fieldset>
