@@ -78,4 +78,32 @@ public Member login(Connection conn, Member member) throws Exception {
 	return loginMember; // 결과 반환
 	}
 
+public int signUp(Connection conn, Member member) throws Exception {
+	
+	int result = 0; // 결과 저장용 변수 선언
+	
+	try {
+		
+		String sql = prop.getProperty("signUp");
+		
+		pstmt = conn.prepareStatement(sql); // PreparedStatement 객체 생성
+		
+		pstmt.setString(1, member.getMemberEmail()); // ? 알맞은 값 대입
+		pstmt.setString(2, member.getMemberPw()); // ? 알맞은 값 대입
+		pstmt.setString(3, member.getMemberNickname()); // ? 알맞은 값 대입
+		pstmt.setString(4, member.getMemberTel()); // ? 알맞은 값 대입
+		pstmt.setString(5, member.getMemberAddress()); // ? 알맞은 값 대입
+		
+		result = pstmt.executeUpdate(); // SQL 수행 후 결과 반환 받기
+		
+		
+	} finally {
+		close(pstmt); // 사용한 JDBC 객체(pstmt) 자원 반환		
+	}
+
+	return result; // 결과 반환
+}
+
+
+
 }
