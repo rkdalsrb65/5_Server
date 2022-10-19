@@ -9,7 +9,6 @@ AUTHORITY, TO_CHAR(ENROLL_DATE, 'YYYY"년" MM"월" DD"일" HH24"시" MI"분" SS"
 FROM "MEMBER"
 WHERE MEMBER_DEL_FL = 'N'
 AND MEMBER_EMAIL = ?
-AND MEMBER_PW = ?
-		</entry>
+AND MEMBER_PW = ?</entry>
 		
 </properties>
