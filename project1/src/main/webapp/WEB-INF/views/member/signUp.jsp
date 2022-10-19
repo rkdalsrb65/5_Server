@@ -18,7 +18,7 @@
 
         <section class="signUp-content">
 
-            <from action="#" method="POST" name="signUp-frm" id="signUp-frm">
+            <form action="/member/signUp"  method="POST"  name="signUp-frm" id="signUp-frm">
 
                 <label for="memberEmail">
                     <span class="required">*</span> 아이디(이메일)
@@ -113,7 +113,7 @@
         </section>
 
     </main>
-    
+
     <jsp:include page="/WEB-INF/views/common/footer.jsp" />
 </body>
 </html>
