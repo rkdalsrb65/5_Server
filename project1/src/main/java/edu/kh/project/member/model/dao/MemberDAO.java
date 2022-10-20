@@ -78,6 +78,12 @@ public Member login(Connection conn, Member member) throws Exception {
 	return loginMember; // 결과 반환
 	}
 
+/** 회원 가입 DAO
+ * @param conn
+ * @param member
+ * @return result
+ * @throws Exception
+ */
 public int signUp(Connection conn, Member member) throws Exception {
 	
 	int result = 0; // 결과 저장용 변수 선언
@@ -102,6 +108,36 @@ public int signUp(Connection conn, Member member) throws Exception {
 	}
 
 	return result; // 결과 반환
+}
+
+/** 회원 정보 수정 DAO
+ * @param conn
+ * @param member
+ * @return result
+ * @throws Exception
+ */
+public int updateMember(Connection conn, Member member) throws Exception{
+	
+	int result = 0;
+	
+	try {
+		
+		String sql = prop.getProperty("updateMember");
+		
+		pstmt = conn.prepareStatement(sql); // PreparedStatement 객체 생성
+		
+		pstmt.setString(1, member.getMemberNickname()); // ? 알맞은 값 대입
+		pstmt.setString(2, member.getMemberTel()); // ? 알맞은 값 대입
+		pstmt.setString(3, member.getMemberAddress()); // ? 알맞은 값 대입
+		pstmt.setInt(4, member.getMemberNo()); // ? 알맞은 값 대입
+		
+		result = pstmt.executeUpdate(); // SQL 수행 후 결과 반환 받기
+		
+	} finally {
+		close(pstmt);
+	}
+	
+	return  result;
 }
 
 
