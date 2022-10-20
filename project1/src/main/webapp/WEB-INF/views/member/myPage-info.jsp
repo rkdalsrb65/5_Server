@@ -1,0 +1,75 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+
+    <link rel="stylesheet" href="/resources/css/main-style.css">
+    <link rel="stylesheet" href="/resources/css/myPage-style.css">
+
+    <!-- fontsome 사이트 아이콘 이용 -->
+    <script src="https://kit.fontawesome.com/f7459b8054.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <main>
+        <jsp:include page="/WEB-INF/views/common/header.jsp" />
+
+        <session class="myPage-content">
+
+            <jsp:include page="/WEB-INF/views/member/sideMenu.jsp" />
+
+            <section class="myPage-main">
+
+                <h1 class="myPage-title">내 정보</h1>
+                <span class="myPage-subject">원하는 회원 정보를 수정할 수 있습니다.</span>
+                
+                <form action="#" method="POST" name="myPage-frm">
+
+                    <div class="myPage-row">
+                        <label>닉네임</label>
+                        <input type="text" name="memberNickname" value="유저일" maxlength="10">
+                    </div>
+
+                    <div class="myPage-row">
+                        <label>전화번호</label>
+                        <input type="text" name="memberTel" value="01012341234" maxlength="11">
+                    </div>
+
+                    <div class="myPage-row info-title">
+                        <span>주소</span>
+                    </div>
+
+                    <div class="myPage-row info-address">
+                        <input type="text" name="memberAddress" value="12345" placeholder="우편번호">
+                        <button type="button">검색</button>
+                    </div>
+
+                    <div class="myPage-row info-address">
+                        <input type="text" name="memberAddress"
+                        value="서울시 중구 남대문로 120" placeholder="도로명/지번 주소">
+                    </div>
+
+                    <div class="myPage-row info-address">
+                        <input type="text" name="memberAddress" value="2층" placeholder="상세주소">
+                    </div>
+
+                    <button class="myPage-submit">수정하기</button>
+
+                </form>
+
+            </section>
+        </session>
+
+    </main>
+    <jsp:include page="/WEB-INF/views/common/footer.jsp" />
+
+    <!-- 다음 주소 api 추가 -->
+
+</body>
+</html>
