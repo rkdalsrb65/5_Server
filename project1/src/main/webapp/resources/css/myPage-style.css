@@ -79,8 +79,9 @@
 
 /* 마이페이지 행 단위 스타일 지정 */
 .myPage-row{
-    width: 400px; /* 너비 400px */
+    width: 500px; /* 너비 500px */
     height: 50px; /* 높이 50px */
+    margin-top: 20px; /* 위에서 20px 떨어지게 */
 
     display: flex; /* 플렉스 컨테이너 설정 */
     align-items: center; /* 세로선 중앙으로 */
@@ -105,8 +106,62 @@
 
 /* 행 내부 input 태그 */
 .myPage-row > input{
-    width: 70%;
-    height: 100%;
+    width: 70%; /* 너비 70% */
+    height: 100%; /* 높이 100% */
     border: none; /* 테두리 제거 */
     outline: none; /* 아웃라인 제거 */
     font-weight: normal; /* 글씨 두껍지않게 일반 사이즈로 */
+}
+
+/* 제출 버튼 */
+.myPage-submit{
+    width: 100%;
+    padding: 10px;
+    margin: 50px 0;
+
+    border: none; /* 테두리 제거 */
+    font-size: 20px; /* 글자 크기 20px */
+    font-weight: bold; /* 글자 두껍게 */
+
+    background-color: #455ba8; /* 배경 색 */
+    color: white; /* 글자 색 하얀색 */
+    cursor: pointer; /* 마우스 커버 가져다대면 손가락 표시 */
+}
+
+/* form 태그 */
+form[name='myPage-frm']{
+    display: flex; /* 플렉스 설정 */
+    justify-content: center; /* 가로선 가운데 정렬 */
+    align-items: center; /* 세로선 가운데 정렬  */
+    flex-direction: column; /* 메인을 열로 시작 */
+}
+
+/* 내부 input 요소 focus 시 */
+.myPage-row:focus-within{
+    border-bottom-color: #455ba8;
+}
+
+
+/* ********************************** */
+
+/* 내 정보 페이지 전용 스타일 */
+
+.info-title{
+    border: none; /* 테두리(밑줄) 제거 */
+}
+
+.info-address{
+    margin: 0;
+}
+
+.info-address > button{
+    width: 30%; /* 너비 30% 공간 할당 */
+    height: 70%; /* 높이 70% 공간 할당 */
+
+    font-size: 14px; /* 글자 크기 14px */
+    font-weight: normal; /* 글자 두께 - 보통 */
+
+    background-color: white; /* 배경 색 */
+    border : 1px solid gray; /* 테두리 색 */
+}
+
