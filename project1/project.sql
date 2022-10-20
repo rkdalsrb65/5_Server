@@ -264,3 +264,12 @@ WHERE MEMBER_DEL_FL = 'N'
 AND MEMBER_EMAIL = 'user01@kh.or.kr'
 AND MEMBER_PW = 'pass01!';
 
+-- 회원 정보 수정
+UPDATE "MEMBER" SET
+MEMBER_NICKNAME = '유저사',
+MEMBER_TEL = '01044444444',
+MEMBER_ADDRESS = '04540,,서울 중구 남대문로 120,,1층'
+WHERE MEMBER_NO = '4';
+
+COMMIT;
+--> 로그인한 회원의 번호
