@@ -1,5 +1,10 @@
-header{ position : relative; /* 상대적 기준 제공 */}
+header{ position : relative; /* 상대적 기준 제공 */
+display: flex;}
 
+/* body{
+    display: flex;
+    padding: auto;
+} */
 #header-top-menu{
     position: absolute; /* 자리 고정 */
     right: 420px; /* 오른쪽 배치 */
@@ -41,4 +46,51 @@ header{ position : relative; /* 상대적 기준 제공 */}
     text-decoration: none; /* 밑줄 없애기 */
     color : black; /* 글자 검정색 */
     font-size: 13px;
+}
+
+/* footer */
+footer{
+    height: 50px;
+    background-color: white;
+
+    position: sticky;
+    
+
+    left: 420px; /* 오른쪽 배치 */
+
+    width: 1080px;
+}
+
+footer > p{
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+footer > article > *{
+    font-size: 12px;
+}
+
+footer a{
+    text-decoration: none;
+    color : black
+}
+
+footer span{
+    padding : 0 10px;
+}
+
+.ee{
+    justify-content: left;
+}
+
+article{
+    border-top: 2px solid black;
+    font-size: 14px;
+    font-weight: 100px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.rr > a{
+    color: red;
 }
