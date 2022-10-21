@@ -1,0 +1,347 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+#pic{
+    margin-bottom: 3px;
+}
+
+#pic > img{
+    width: 1078px;
+}
+
+
+body, main{
+    width: 1078px;
+    margin: auto;
+
+    min-height: 300vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#header-top{
+    display: flex;
+    justify-content: space-between;
+}
+#naver-gnb{
+    align-self:flex-start;
+    height: 35px;
+    margin: 0;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+.link_naver{
+    float: left;
+    margin: 13px 40px 0 0;
+    display: flex;
+}
+
+#header-top-menu a{
+    text-decoration: none; /* 밑줄 없애기 */
+    color : black; /* 글자 검정색 */
+    font-size: 12px;
+    padding: 9px;
+}
+
+#header-top-menu a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#header-top-menu span{
+    color : #ccc; /* 글자 검정색 */
+    font-size: 12px;
+}
+
+#header-top-menu{
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    height: 43px;
+    width: 1078px;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    /* margin-top: -12px; */
+}
+
+nav>ul {
+    padding: 0px 24px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+ul >li[id="special-menu-1"]::before,li[id="special-menu-2"]::before{
+    content: "•";
+    color: #a3a9a9;
+    font-size:1px;
+}
+ul > li{
+    flex-wrap: wrap;
+    display: inline-block;
+}
+
+
+nav li>a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+
+    /* display: block; */
+    height: 100%;
+
+   /*  display: flex; */
+    /* justify-content: center; */
+
+    width: 90px;
+    height: 20px;
+}
+
+nav li>a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div#content {
+    width: 200px;
+}
+
+#ul-1 {
+    width: 200px;
+    display: flex;
+    height: 39px;
+    list-style: none;
+    border-top: 2px solid #333;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#content li > a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+}
+
+div#cafe{
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 82px;
+    display: relative;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#logo{
+    display: flex;
+}
+
+#cafe > ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#name {
+    display: inline;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#manager {
+    border: 1px solid;
+    border-color: #e5e5e5;
+    background-color: #fff;
+    font-size: 10px;
+    color: #666;
+    line-height: 12px;
+    text-align: center;
+    vertical-align: top;
+}
+
+#inline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#inline a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+#since {
+    color: rgb(102, 102, 102);
+    font-size: 10.6px;
+}
+
+#cafe-member{
+    width: 200px;
+    height: 57px;
+    padding: 11px 10px 6px 10px;
+    display: block;
+    align-items: center;
+}
+
+#cafe-grade{
+    width: 180px;
+    height: 15px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#cafe-grade > a { 
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+#count {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    margin-left: 11px;
+}
+
+#member-count{
+    position: relative;
+    width: 180px;
+    height: 15px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#count1{
+    text-decoration: none;
+    color: #666666;
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    margin-right: 0px;
+}
+
+#count-3{
+    padding: 0 10px 12px;
+}
+
+#star-img{
+    margin-right: 5px;
+}
+
+#star{
+    position: relative;
+    color: #333333;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+}
+
+#star-count{
+    position: absolute;
+    color: #666666;
+    right: 0;
+}
+
+/* 게시판 구독수 */
+#subc-img{
+    margin-right: 5px;
+}
+
+#subc{
+    position: relative;
+    color: #333333;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+}
+
+#subc2{
+    position: absolute;
+    color: #666666;
+    right: 0;
+}
+
+/* 우리카페앱 수 */
+#app-img{
+    margin-right: 5px;
+}
+
+#app{
+    position: relative;
+    font-size: 12px;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+}
+
+#app2{
+    position: absolute;
+    color: #666666;
+    right: 0;
+}
+
+#cafe-type{
+    display: flex;
+    font-size: 12px;
+    padding: 7px 11px 13px;
+    color: #333333;
+}
+
+#cafe-type :first-child{
+    font-weight: bold;
+    padding: 5px 6px;
+}
+
+#cafe-type :last-child{
+    padding-top: 5px;
+}
+
+
+
+#signUpbtn{
+    background-color: #5a5a5a;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    border-style: none;
+    width: 200px;
+}
+
+#signUpbtn a{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 13px;
+}
