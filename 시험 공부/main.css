@@ -25,10 +25,6 @@ body, main{
     align-items: center; */
 }
 
-#header-top{
-    display: flex;
-    justify-content: space-between;
-}
 #naver-gnb{
     align-self:flex-start;
     height: 35px;
@@ -43,27 +39,7 @@ body, main{
     display: flex;
 }
 
-#header-top-menu a{
-    text-decoration: none; /* 밑줄 없애기 */
-    color : black; /* 글자 검정색 */
-    font-size: 12px;
-    padding: 9px;
-}
 
-#header-top-menu a:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-#header-top-menu span{
-    color : #ccc; /* 글자 검정색 */
-    font-size: 12px;
-}
-
-#header-top-menu{
-    display: flex;
-    align-items: center;
-}
 
 nav {
     height: 43px;
@@ -344,4 +320,70 @@ div#cafe{
     text-decoration: none;
     color: #FFFFFF;
     font-size: 13px;
+}
+
+/* header */
+#header-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-top-menu a{
+    text-decoration: none; /* 밑줄 없애기 */
+    color : black; /* 글자 검정색 */
+    font-size: 12px;
+    padding: 9px;
+}
+
+#header-top-menu a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#header-top-menu span{
+    color : #ccc; /* 글자 검정색 */
+    font-size: 12px;
+}
+
+#header-top-menu{
+    display: flex;
+    align-items: center;
+}
+
+/* footer */
+footer *{
+    display: inline-block;
+}
+
+footer.footer{
+    margin: 60px 0px 0px;
+    padding: 24px 90px 24px 0px;
+}
+
+footer .cafe_name{
+    /* margin: 0;
+    padding: 0; */
+    font-size: 13px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    /* margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+    /* font-weight: bold; */
+}
+
+.cafe_nbsp{
+    color: #5a5a5a;
+    /* padding: 12px; */
+}
+
+.cafe_link{
+    text-decoration: none;
+    color: black;
+}
+
+.naver_cafe{
+    font-size: 14.5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
 }
