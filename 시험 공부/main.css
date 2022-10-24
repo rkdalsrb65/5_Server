@@ -7,6 +7,7 @@
 
 #pic{
     margin-bottom: 3px;
+    position: relative;
 }
 
 #pic > img{
@@ -271,7 +272,35 @@ div#cafe{
     color: #FFFFFF;
     font-size: 13px;
 }
+/* *************************** header ******************************************* */
+/* .cafe_project_size{
+    height: 400px;
+    width: 200px;
+} */
+.cafe_project{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 50px;
+    width: 140px;
+    background-color: hsl(0, 0%, 80%,50%);
+    position: absolute;
+    right: 0%;
+    bottom: 4px;
+    /* border: solid 1px hsl(0, 0%, 80%,30%); */
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    /* display: */
+    
+}
+#cafe_project_name,#cafe_project_names{
+    text-align: center;
+    height: 17px;
+}
 
+/* *************************** header ******************************************* */
 /* header */
 #header-top{
     display: flex;
