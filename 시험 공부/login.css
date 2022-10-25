@@ -1,0 +1,86 @@
+body{
+    display: flex;
+    justify-content: center; /* 중앙 이동 */
+    align-items: center; /* 교차축 : 중앙 이동 */
+    height: 50vh; /* vh : viewport height
+    현재 기기(브라우저)의 높이 % 단위로 지정 */
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+#home-logo{
+
+}
+
+.main{
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+}
+.flex{
+    
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    
+}
+
+.id_login{
+    text-align: center;
+    font-size: 20px;
+    width: 150px;
+    
+}
+
+.number{
+    text-align: center;
+    font-size: 20px;
+    width: 150px;
+}
+
+.qr_code{
+    text-align: center;
+    font-size: 20px;
+    width: 150px;
+}
+
+.id{
+    width: 442px;
+    height: 30px;
+    display: block;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.pw{
+    width: 442px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.idpw{
+    display: block;
+}
+
+.login{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: center; /* 중앙 이동 */
+    align-items: center; /* 교차축 : 중앙 이동 */
+    height: 10vh; /* vh : viewport height */
+}
