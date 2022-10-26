@@ -9,25 +9,44 @@
 
 .kmg{
     border: 1px solid #ccc;
-    display: block;
+    display: flex;
 }
 
-.main{
+.border{
+    justify-content: space-between;
     font-size: 10px;
 }
 
-.border_people{
+.hidden{
     font-size: 10px;
 }
 
-.to_date{
+.tt{
     font-size: 10px;
 }
 
-.f5{
+
+
+
+
+
+
+.th_main{
     font-size: 10px;
 }
 
-.like{
+.th_name{
+    font-size: 10px;
+}
+
+.th_day{
+    font-size: 10px;
+}
+
+.th_f5{
+    font-size: 10px;
+}
+
+.th_like{
     font-size: 10px;
 }
