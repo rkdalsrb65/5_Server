@@ -4,6 +4,9 @@
     margin: 0;
 }
 
+.main{
+    display: flex;
+}
 
 #pic{
     margin-bottom: 3px;
@@ -26,7 +29,7 @@ body, main{
     align-items: center; */
 }
 
-#naver-gnb{
+#never-gnb{
     align-self:flex-start;
     height: 35px;
     margin: 0;
@@ -34,7 +37,7 @@ body, main{
     cursor: pointer;
   }
 
-.link_naver{
+.link_never{
     float: left;
     margin: 13px 40px 0 0;
     display: flex;
@@ -272,11 +275,23 @@ div#cafe{
     color: #FFFFFF;
     font-size: 13px;
 }
+
 /* *************************** header ******************************************* */
-/* .cafe_project_size{
-    height: 400px;
-    width: 200px;
-} */
+/* header */
+#never-gnb{
+    align-self:flex-start;
+    height: 35px;
+    margin: 0;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+.link_never{
+    float: left;
+    margin: 13px 40px 0 0;
+    display: flex;
+}
+
 .cafe_project{
     display: flex;
     flex-wrap: wrap;
@@ -300,8 +315,6 @@ div#cafe{
     height: 17px;
 }
 
-/* *************************** header ******************************************* */
-/* header */
 #header-top{
     display: flex;
     justify-content: space-between;
@@ -420,11 +433,11 @@ a:hover {
     text-decoration: underline;
 }
 
-.naver_cafe{
+.never_cafe{
     font-size: 14.5px;
     font-weight: bold;
     text-decoration: none;
     color: black;
     right: 0px;
-    padding-left: 458px;
+    padding-left: 459px;
 }

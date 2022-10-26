@@ -53,6 +53,7 @@ body{
     height: 30px;
     display: block;
     padding: 5px;
+    margin: 1px;
     border: 1px solid #ccc;
     border-radius: 10px;
     border-bottom: ;
@@ -62,6 +63,7 @@ body{
     width: 442px;
     height: 30px;
     padding: 5px;
+    margin: 1px;
     border: 1px solid #ccc;
     border-radius: 10px;
 }
@@ -77,6 +79,7 @@ body{
     background-color: green;
     color: white;
     border: none;
+    margin: 1px;
 }
 
 .footer{
