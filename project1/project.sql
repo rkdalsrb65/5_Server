@@ -319,7 +319,10 @@ FROM "MEMBER"
 WHERE MEMBER_EMAIL = 'user01@kh.or.kr'
 AND ROWNUM = 1;
 
-
+-- 프로필 이미지 수정
+UPDATE "MEMBER" SET
+PROFILE_IMG = #{profileImage}
+WHERE MEMBER_NO = #{memberNo};
 
 
 
