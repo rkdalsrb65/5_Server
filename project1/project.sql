@@ -324,5 +324,6 @@ UPDATE "MEMBER" SET
 PROFILE_IMG = #{profileImage}
 WHERE MEMBER_NO = #{memberNo};
 
+SELECT * FROM "MEMBER";
 
 
